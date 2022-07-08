@@ -1,5 +1,6 @@
 # https://atcoder.jp/contests/abs/tasks/abc086_a
 
+# .map(&:to_i) 配列の中身をinteger型にする。
 a,b=gets.chomp.split(" ").map(&:to_i);
 
 puts (a*b) % 2 == 0 ? "Even" : "Odd"
