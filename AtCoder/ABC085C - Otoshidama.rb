@@ -1,9 +1,11 @@
+# https://atcoder.jp/contests/abs/tasks/abc085_c
+
 def otoshidama(number, price)
-  (0..number).each do |a|
-    (0..number - a).each do |b|
-      c = number - a - b
-      if a * 10000 + b * 5000 + c * 1000 == price && a + b + c <= number
-        print ("#{a} #{b} #{c}")
+  (0..number).each do |x|
+    (0..number - x).each do |y|
+      z = number - x - y
+      if x * 10000 + y * 5000 + z * 1000 == price && x + y + z <= number
+        print ("#{x} #{y} #{z}")
         exit
       end
     end
